@@ -1713,11 +1713,29 @@ ul.menuShortList li a:hover
 	}
 	
 	/* *************************** main menu ************************/
-	.menu ul li a
-	{
-	    padding-left: 10px;
-	    padding-right: 10px;
-	}
+  .menu {
+    background: #78101a url(../images/home/menu_bg.png) no-repeat top;
+    text-align: center;
+  }
+
+  .menu ul {
+    padding-left: 0;
+  }
+
+  .menu ul li {
+    float: none;
+    display: inline-block;
+    margin: 0 10px;
+    background: none;
+  }
+
+  .menu ul li a
+  {
+    display: block;
+    float: none;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
 	/* *************************** end main menu ************************/
 	
 	/* *************************** footer container ************************/
@@ -2268,6 +2286,59 @@ ul.menuShortList li a:hover
 
 
 
+span.trigger {
+  display: none;
+}
+
+@media screen and (min-width: 521px) {
+  .menu ul {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 520px) {
+
+  span.trigger {
+    display: block;
+    float: right;
+    margin-top: -5px;
+    margin-bottom: 7px;
+    padding: 5px;
+    width: 40px;
+    background: transparent;
+    color: #f00;
+    cursor: pointer;
+  }
+
+  span.trigger span.bar {
+    display: block;
+    margin-top: 5px;
+    height: 5px;
+    background: #fff;
+  }
+
+  .menu {
+    float: none;
+    clear: both;
+    overflow: hidden;
+    padding: 10px 0 0;
+    width: auto;
+  }
+
+  .menu ul {
+    clear: both;
+    display: none;
+  }
+
+  .menu ul li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+
+}
 
 
 
